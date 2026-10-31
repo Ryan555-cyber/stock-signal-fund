@@ -1,0 +1,84 @@
+name: data-pipeline
+
+on:
+  schedule:
+    - cron: "25 21 * * 1-5"   # daily: weekdays 21:25 UTC (after the US close)
+    - cron: "10 18 * * 0"     # weekly: Sundays 18:10 UTC
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "daily or weekly"
+        type: choice
+        options: [weekly, daily]
+        default: weekly
+
+permissions:
+  contents: write
+
+concurrency:
+  group: data-pipeline
+  cancel-in-progress: false
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Arrange files
+        run: |
+          mkdir -p pipeline
+          for f in fetch_data.py tickers.json requirements.txt; do
+            if [ -f "$f" ] && [ ! -f "pipeline/$f" ]; then cp "$f" "pipeline/$f"; fi
+          done
+          ls pipeline
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install
+        run: pip install -q -r pipeline/requirements.txt
+
+      - name: Pick mode
+        id: m
+        env:
+          EVENT: ${{ github.event_name }}
+          SCHED: ${{ github.event.schedule }}
+          INPUT_MODE: ${{ inputs.mode }}
+        run: |
+          if [ "$EVENT" = "workflow_dispatch" ]; then M="$INPUT_MODE"
+          elif [ "$SCHED" = "10 18 * * 0" ]; then M=weekly
+          else M=daily; fi
+          echo "mode=$M" >> "$GITHUB_OUTPUT"
+
+      - name: Choose where data is published
+        id: dest
+        env:
+          T: ${{ secrets.DATA_REPO_TOKEN }}
+        run: |
+          if [ -n "$T" ] && git clone -q "https://x-access-token:${T}@github.com/${GITHUB_REPOSITORY_OWNER}/stock-signal-data.git" public-data; then
+            echo "dir=$GITHUB_WORKSPACE/public-data" >> "$GITHUB_OUTPUT"; echo "target=data-repo" >> "$GITHUB_OUTPUT"
+          else
+            mkdir -p data
+            echo "dir=$GITHUB_WORKSPACE/data" >> "$GITHUB_OUTPUT"; echo "target=this-repo" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Fetch and clean data
+        env:
+          SEC_USER_AGENT: ${{ vars.SEC_USER_AGENT || 'stock-signal-fund research Ryan555-cyber@users.noreply.github.com' }}
+          DATA_DIR: ${{ steps.dest.outputs.dir }}
+        run: python pipeline/fetch_data.py "${{ steps.m.outputs.mode }}"
+
+      - name: Publish data
+        env:
+          TARGET: ${{ steps.dest.outputs.target }}
+          MODE: ${{ steps.m.outputs.mode }}
+        run: |
+          if [ "$TARGET" = "data-repo" ]; then cd public-data; fi
+          git config user.name "data-bot"
+          git config user.email "data-bot@users.noreply.github.com"
+          if [ "$TARGET" = "data-repo" ]; then git add -A; else git add data; fi
+          git commit -m "data $MODE $(date -u +%F)" || { echo "no changes"; exit 0; }
+          git push origin HEAD:main
