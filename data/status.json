@@ -1,0 +1,18 @@
+{
+ "mode": "weekly",
+ "as_of": "2026-10-31",
+ "fetched_at": "2026-10-31T14:21:10Z",
+ "tickers": 14,
+ "tickers_with_price": 14,
+ "ok": false,
+ "runtime_sec": 384,
+ "errors": [
+  "sec ticker map: HTTPError: 403 Client Error: Forbidden for url: https://www.sec.gov/files/company_tickers.json",
+  "fred DGS10: ReadTimeout: HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=30)",
+  "fred BAMLH0A0HYM2: ReadTimeout: HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=30)",
+  "fred DTWEXBGS: ReadTimeout: HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=30)",
+  "fred DCOILWTICO: ReadTimeout: HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=30)",
+  "fred PCOPPUSDM: ReadTimeout: HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=30)",
+  "fred T10Y2Y: ReadTimeout: HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=30)"
+ ]
+}
