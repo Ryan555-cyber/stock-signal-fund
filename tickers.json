@@ -1,0 +1,5 @@
+{
+ "_comment": "Names the pipeline tracks. watchlist = the book. bench = research candidates. Edit this file to add/remove names (Claude's memos tell you when).",
+ "watchlist": ["ADBE", "CRM", "NVDA", "AVGO", "AMZN", "NOW", "NU", "MSFT", "GOOGL", "ACN", "DIS", "CMCSA", "META", "LPLA"],
+ "bench": []
+}
