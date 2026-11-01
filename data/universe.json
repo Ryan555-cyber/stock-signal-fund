@@ -1,5 +1,5 @@
 {
- "as_of": "2026-10-31",
+ "as_of": "2026-11-01",
  "universe_size": 502,
  "movers": {
   "ret_1m_pct": {
@@ -659,13 +659,13 @@
   },
   {
    "ticker": "VLO",
-   "next_fy_eps_chg_90d_pct": 113.48,
-   "next_fy_eps_chg_30d_pct": 44.5
+   "next_fy_eps_chg_90d_pct": 95.94,
+   "next_fy_eps_chg_30d_pct": 44.45
   },
   {
    "ticker": "PSX",
-   "next_fy_eps_chg_90d_pct": 62.66,
-   "next_fy_eps_chg_30d_pct": 17.11
+   "next_fy_eps_chg_90d_pct": 62.38,
+   "next_fy_eps_chg_30d_pct": 16.9
   },
   {
    "ticker": "SMCI",
@@ -708,14 +708,19 @@
    "next_fy_eps_chg_30d_pct": 14.85
   },
   {
+   "ticker": "MPWR",
+   "next_fy_eps_chg_90d_pct": 27.0,
+   "next_fy_eps_chg_30d_pct": 26.72
+  },
+  {
    "ticker": "ECHO",
    "next_fy_eps_chg_90d_pct": 26.85,
    "next_fy_eps_chg_30d_pct": -11.03
   },
   {
    "ticker": "CVX",
-   "next_fy_eps_chg_90d_pct": 24.57,
-   "next_fy_eps_chg_30d_pct": 9.46
+   "next_fy_eps_chg_90d_pct": 24.49,
+   "next_fy_eps_chg_30d_pct": 9.72
   },
   {
    "ticker": "TKO",
@@ -731,11 +736,6 @@
    "ticker": "LITE",
    "next_fy_eps_chg_90d_pct": 23.99,
    "next_fy_eps_chg_30d_pct": 2.1
-  },
-  {
-   "ticker": "MPWR",
-   "next_fy_eps_chg_90d_pct": 22.76,
-   "next_fy_eps_chg_30d_pct": 22.49
   },
   {
    "ticker": "FANG",
@@ -804,13 +804,23 @@
   },
   {
    "ticker": "AMD",
-   "next_fy_eps_chg_90d_pct": 14.67,
-   "next_fy_eps_chg_30d_pct": 2.1
+   "next_fy_eps_chg_90d_pct": 14.94,
+   "next_fy_eps_chg_30d_pct": 2.34
+  },
+  {
+   "ticker": "PWR",
+   "next_fy_eps_chg_90d_pct": 14.48,
+   "next_fy_eps_chg_30d_pct": 6.65
   },
   {
    "ticker": "CF",
    "next_fy_eps_chg_90d_pct": 14.33,
    "next_fy_eps_chg_30d_pct": 7.66
+  },
+  {
+   "ticker": "REGN",
+   "next_fy_eps_chg_90d_pct": 13.94,
+   "next_fy_eps_chg_30d_pct": 13.01
   },
   {
    "ticker": "STLD",
@@ -828,11 +838,6 @@
    "next_fy_eps_chg_30d_pct": 0.36
   },
   {
-   "ticker": "PWR",
-   "next_fy_eps_chg_90d_pct": 12.75,
-   "next_fy_eps_chg_30d_pct": 5.04
-  },
-  {
    "ticker": "PKG",
    "next_fy_eps_chg_90d_pct": 12.74,
    "next_fy_eps_chg_30d_pct": 8.49
@@ -846,11 +851,6 @@
    "ticker": "Q",
    "next_fy_eps_chg_90d_pct": 12.03,
    "next_fy_eps_chg_30d_pct": 2.23
-  },
-  {
-   "ticker": "FIX",
-   "next_fy_eps_chg_90d_pct": 11.68,
-   "next_fy_eps_chg_30d_pct": 11.43
   }
  ],
  "revision_laggards": [
@@ -866,8 +866,8 @@
   },
   {
    "ticker": "BA",
-   "next_fy_eps_chg_90d_pct": -37.84,
-   "next_fy_eps_chg_30d_pct": -37.64
+   "next_fy_eps_chg_90d_pct": -39.41,
+   "next_fy_eps_chg_30d_pct": -39.21
   },
   {
    "ticker": "NKE",
@@ -880,14 +880,19 @@
    "next_fy_eps_chg_30d_pct": -0.23
   },
   {
+   "ticker": "WY",
+   "next_fy_eps_chg_90d_pct": -24.69,
+   "next_fy_eps_chg_30d_pct": -23.32
+  },
+  {
    "ticker": "MGM",
-   "next_fy_eps_chg_90d_pct": -24.78,
-   "next_fy_eps_chg_30d_pct": -20.65
+   "next_fy_eps_chg_90d_pct": -24.13,
+   "next_fy_eps_chg_30d_pct": -21.29
   },
   {
    "ticker": "UAL",
-   "next_fy_eps_chg_90d_pct": -22.58,
-   "next_fy_eps_chg_30d_pct": -16.31
+   "next_fy_eps_chg_90d_pct": -23.02,
+   "next_fy_eps_chg_30d_pct": -15.56
   },
   {
    "ticker": "LEN",
@@ -910,19 +915,9 @@
    "next_fy_eps_chg_30d_pct": -14.5
   },
   {
-   "ticker": "WY",
-   "next_fy_eps_chg_90d_pct": -17.27,
-   "next_fy_eps_chg_30d_pct": -18.14
-  },
-  {
    "ticker": "NCLH",
-   "next_fy_eps_chg_90d_pct": -16.56,
-   "next_fy_eps_chg_30d_pct": -10.72
-  },
-  {
-   "ticker": "LUV",
-   "next_fy_eps_chg_90d_pct": -16.37,
-   "next_fy_eps_chg_30d_pct": -11.7
+   "next_fy_eps_chg_90d_pct": -17.27,
+   "next_fy_eps_chg_30d_pct": -11.48
   },
   {
    "ticker": "ALB",
@@ -940,19 +935,24 @@
    "next_fy_eps_chg_30d_pct": -10.14
   },
   {
+   "ticker": "LUV",
+   "next_fy_eps_chg_90d_pct": -15.41,
+   "next_fy_eps_chg_30d_pct": -10.69
+  },
+  {
+   "ticker": "VTR",
+   "next_fy_eps_chg_90d_pct": -14.9,
+   "next_fy_eps_chg_30d_pct": -12.03
+  },
+  {
+   "ticker": "TSN",
+   "next_fy_eps_chg_90d_pct": -13.89,
+   "next_fy_eps_chg_30d_pct": -6.3
+  },
+  {
    "ticker": "NVR",
    "next_fy_eps_chg_90d_pct": -13.86,
    "next_fy_eps_chg_30d_pct": -11.5
-  },
-  {
-   "ticker": "FICO",
-   "next_fy_eps_chg_90d_pct": -13.4,
-   "next_fy_eps_chg_30d_pct": -10.89
-  },
-  {
-   "ticker": "ZTS",
-   "next_fy_eps_chg_90d_pct": -13.31,
-   "next_fy_eps_chg_30d_pct": -2.0
   }
  ],
  "revision_screen_coverage": 498,

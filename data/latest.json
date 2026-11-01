@@ -1,7 +1,7 @@
 {
  "mode": "weekly",
- "as_of": "2026-10-31",
- "fetched_at": "2026-10-31T14:21:10Z",
+ "as_of": "2026-11-01",
+ "fetched_at": "2026-11-01T21:58:19Z",
  "macro": {
   "DGS10": {
    "label": "10y yield (%)",
@@ -171,22 +171,7 @@
     "reaction_3d_pct": 25.21,
     "reaction_method": "close before report date -> close 3 sessions after"
    },
-   "analyst_actions_10d": [
-    {
-     "date": "2026-10-21",
-     "firm": "DA Davidson",
-     "action": "main",
-     "from": "Neutral",
-     "to": "Neutral"
-    },
-    {
-     "date": "2026-10-21",
-     "firm": "Cantor Fitzgerald",
-     "action": "reit",
-     "from": "Overweight",
-     "to": "Overweight"
-    }
-   ],
+   "analyst_actions_10d": [],
    "sec": {
     "cik": null,
     "filings": [],
@@ -380,32 +365,32 @@
    "sector": "Consumer Cyclical",
    "industry": "Internet Retail",
    "market_cap": 2598937821184.0,
-   "fwd_pe": 22.8,
+   "fwd_pe": 22.07,
    "trailing_pe": 19.43,
-   "fwd_eps": 10.54,
-   "free_cashflow": -11545749504.0,
-   "fcf_yield_pct": -0.44,
+   "fwd_eps": 10.892,
+   "free_cashflow": -11139749888.0,
+   "fcf_yield_pct": -0.43,
    "gross_margin": 0.5137,
    "operating_margin": 0.139,
    "revenue_growth": 0.121,
    "short_pct_float": 0.95,
    "short_ratio_days": 2.6,
-   "target_mean": 331.77,
+   "target_mean": 326.92,
    "n_analysts": 58,
    "eps_trend": {
     "0y": {
-     "current": 12.8324,
+     "current": 12.8109,
      "d30": 12.8883,
      "d90": 12.3016,
-     "chg_30d_pct": -0.43,
-     "chg_90d_pct": 4.31
+     "chg_30d_pct": -0.6,
+     "chg_90d_pct": 4.14
     },
     "+1y": {
-     "current": 10.6194,
+     "current": 10.6509,
      "d30": 10.5188,
      "d90": 10.4079,
-     "chg_30d_pct": 0.96,
-     "chg_90d_pct": 2.03
+     "chg_30d_pct": 1.26,
+     "chg_90d_pct": 2.33
     }
    },
    "eps_revisions_next_fy": {
@@ -506,9 +491,9 @@
    "sector": "Technology",
    "industry": "Software - Application",
    "market_cap": 109105840128.0,
-   "fwd_pe": 21.76,
+   "fwd_pe": 21.89,
    "trailing_pe": 75.63,
-   "fwd_eps": 4.831,
+   "fwd_eps": 4.802,
    "free_cashflow": 5754250240.0,
    "fcf_yield_pct": 5.27,
    "gross_margin": 0.7308,
@@ -516,22 +501,22 @@
    "revenue_growth": 0.205,
    "short_pct_float": 2.69,
    "short_ratio_days": 2.52,
-   "target_mean": 154.62,
+   "target_mean": 154.69,
    "n_analysts": 46,
    "eps_trend": {
     "0y": {
-     "current": 3.9569,
+     "current": 3.954,
      "d30": 4.0667,
      "d90": 4.0676,
-     "chg_30d_pct": -2.7,
-     "chg_90d_pct": -2.72
+     "chg_30d_pct": -2.77,
+     "chg_90d_pct": -2.79
     },
     "+1y": {
-     "current": 4.8089,
+     "current": 4.8017,
      "d30": 5.0055,
      "d90": 5.0062,
-     "chg_30d_pct": -3.93,
-     "chg_90d_pct": -3.94
+     "chg_30d_pct": -4.07,
+     "chg_90d_pct": -4.08
     }
    },
    "eps_revisions_next_fy": {
@@ -703,7 +688,7 @@
    "market_cap": 3875804807168.0,
    "fwd_pe": 21.62,
    "trailing_pe": 27.24,
-   "fwd_eps": 24.142,
+   "fwd_eps": 24.136,
    "free_cashflow": 2994125056.0,
    "fcf_yield_pct": 0.08,
    "gross_margin": 0.6766,
@@ -711,22 +696,22 @@
    "revenue_growth": 0.188,
    "short_pct_float": 0.88,
    "short_ratio_days": 2.94,
-   "target_mean": 629.69,
-   "n_analysts": 51,
+   "target_mean": 632.9,
+   "n_analysts": 52,
    "eps_trend": {
     "0y": {
-     "current": 20.0232,
-     "d30": 19.7597,
+     "current": 20.0169,
+     "d30": 19.748,
      "d90": 19.6769,
-     "chg_30d_pct": 1.33,
-     "chg_90d_pct": 1.76
+     "chg_30d_pct": 1.36,
+     "chg_90d_pct": 1.73
     },
     "+1y": {
-     "current": 24.1416,
-     "d30": 23.6759,
+     "current": 24.1364,
+     "d30": 23.6439,
      "d90": 23.474,
-     "chg_30d_pct": 1.97,
-     "chg_90d_pct": 2.84
+     "chg_30d_pct": 2.08,
+     "chg_90d_pct": 2.82
     }
    },
    "eps_revisions_next_fy": {
@@ -827,9 +812,9 @@
    "sector": "Communication Services",
    "industry": "Internet Content & Information",
    "market_cap": 3440352690176.0,
-   "fwd_pe": 18.49,
+   "fwd_pe": 18.44,
    "trailing_pe": 14.61,
-   "fwd_eps": 15.139,
+   "fwd_eps": 15.176,
    "free_cashflow": -1162499968.0,
    "fcf_yield_pct": -0.03,
    "gross_margin": 0.6086,
@@ -849,9 +834,9 @@
     },
     "+1y": {
      "current": 14.8398,
-     "d30": 14.9559,
+     "d30": 14.9532,
      "d90": 14.7698,
-     "chg_30d_pct": -0.78,
+     "chg_30d_pct": -0.76,
      "chg_90d_pct": 0.47
     }
    },
@@ -1003,13 +988,6 @@
      "action": "main",
      "from": "Equal-Weight",
      "to": "Equal-Weight"
-    },
-    {
-     "date": "2026-10-21",
-     "firm": "Baird",
-     "action": "down",
-     "from": "Outperform",
-     "to": "Neutral"
     }
    ],
    "sec": {
@@ -1039,7 +1017,7 @@
    "market_cap": 191558647808.0,
    "fwd_pe": 14.8,
    "trailing_pe": 22.87,
-   "fwd_eps": 7.495,
+   "fwd_eps": 7.498,
    "free_cashflow": 4860375040.0,
    "fcf_yield_pct": 2.54,
    "gross_margin": 0.376,
@@ -1052,17 +1030,17 @@
    "eps_trend": {
     "0y": {
      "current": 6.9315,
-     "d30": 6.9206,
-     "d90": 6.8092,
-     "chg_30d_pct": 0.16,
-     "chg_90d_pct": 1.8
+     "d30": 6.9288,
+     "d90": 6.8073,
+     "chg_30d_pct": 0.04,
+     "chg_90d_pct": 1.82
     },
     "+1y": {
-     "current": 7.495,
-     "d30": 7.4757,
-     "d90": 7.4627,
-     "chg_30d_pct": 0.26,
-     "chg_90d_pct": 0.43
+     "current": 7.4982,
+     "d30": 7.4781,
+     "d90": 7.4576,
+     "chg_30d_pct": 0.27,
+     "chg_90d_pct": 0.54
     }
    },
    "eps_revisions_next_fy": {
